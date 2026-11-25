@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mian Qin</title>
+<meta name="description" content="Mian Qin — doctoral researcher at Aalto University, working on empirical software engineering and open source sustainability.">
+<style>
+  :root {
+    --text:#1f2328; --muted:#59636e; --accent:#0b5cad;
+    --bg:#ffffff; --line:#e5e7eb; --chip:#f3f5f8; --badge:#e8f0fb;
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+         color:var(--text); background:var(--bg); line-height:1.65; font-size:16px; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .wrap { max-width:880px; margin:0 auto; padding:56px 24px 80px; }
+  nav { display:flex; gap:20px; font-size:14px; margin-bottom:40px; flex-wrap:wrap; }
+  nav a { color:var(--muted); }
+  header { display:flex; gap:32px; align-items:center; flex-wrap:wrap; }
+  .avatar { width:150px; height:150px; border-radius:50%; object-fit:cover; object-position:50% 50%;
+            background:var(--chip); flex-shrink:0; }
+  h1 { margin:0 0 6px; font-size:32px; }
+  .role { color:var(--muted); margin:0 0 12px; line-height:1.5; }
+  .links { display:flex; gap:10px; flex-wrap:wrap; }
+  .links a { background:var(--chip); padding:4px 12px; border-radius:999px; font-size:14px; }
+  h2 { font-size:20px; margin:48px 0 16px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+  .interests { display:flex; gap:8px; flex-wrap:wrap; margin-top:12px; }
+  .interests span { font-size:13px; background:var(--chip); padding:2px 10px; border-radius:4px; color:var(--muted); }
+  .pub { display:flex; gap:16px; margin-bottom:18px; }
+  .badge { flex-shrink:0; width:92px; height:fit-content; text-align:center; font-size:12px; font-weight:700;
+           background:var(--badge); color:var(--accent); padding:4px 0; border-radius:4px; }
+  .pub p { margin:0; font-size:15px; }
+  .pub .title { font-weight:600; }
+  .item { margin-bottom:22px; }
+  .row { display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+  .row .when { color:var(--muted); font-size:15px; }
+  .sub { color:var(--muted); font-size:15px; }
+  .item ul { margin:6px 0 0; padding-left:20px; font-size:15px; }
+  footer { margin-top:64px; color:var(--muted); font-size:13px; }
+  @media (max-width:560px) { .pub { flex-direction:column; gap:6px; } .badge { width:auto; padding:2px 8px; align-self:flex-start; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a href="#about">About</a><a href="#publications">Publications</a>
+    <a href="#education">Education</a><a href="#other">Other</a>
+  </nav>
+
+  <header id="about">
+    <img class="avatar" src="photo.jpg" alt="Mian Qin">
+    <div>
+      <h1>Mian Qin</h1>
+      <p class="role">
+        Doctoral Researcher<br>
+        Department of Computer Science<br>
+        Aalto University
+      </p>
+      <div class="links">
+        <a href="mailto:mianqin24@gmail.com">Email</a>
+        <a href="https://scholar.google.com/citations?user=IGcZz1sAAAAJ">Google Scholar</a>
+      </div>
+    </div>
+  </header>
+
+  <p style="margin-top:28px">
+    I am a doctoral researcher at Aalto University, Finland, supervised by <b>Prof. Haoye Tian</b>.
+    Previously, I obtained my M.Eng. degree in Computer Technology from Beijing Institute of Technology
+    under the supervision of <b>Prof. Yuxia Zhang</b>, where I also received my B.Eng. degree in Computer Science
+    and Technology. My research focused on the sustainability of open source
+    software (OSS) ecosystems, in particular commercial participation in OSS. This work has been published
+    at ICSE, FSE, TSE, and TOSEM. Before starting my Ph.D., I worked as a backend development engineer
+    at Alibaba.
+  </p>
+  <div class="interests">
+    <span>Open Source Sustainability</span><span>Mining Software Repositories</span>
+    <span>Empirical Software Engineering</span><span>Developer Behavior</span><span>Commercial Participation in OSS</span>
+  </div>
+
+  <h2 id="publications">Publications</h2>
+  <div class="pub">
+    <div class="badge">FSE'25</div>
+    <p><b>Mian Qin</b>, Yuxia Zhang, Klaas-Jan Stol, H. Liu.
+      <span class="title">Who Will Stop Contributing to OSS Projects? Predicting Company Turnover Based on Initial Behavior.</span>
+      Proceedings of the ACM on Software Engineering (FSE), 2025.</p>
+  </div>
+  <div class="pub">
+    <div class="badge">TSE'25</div>
+    <p><b>Mian Qin</b>, Yuxia Zhang, Minghui Zhou, Z. Wang, H. Li, H. Liu.
+      <span class="title">Developers' Views on Commercial Involvement in OSS — A Survey from Three Projects.</span>
+      IEEE Transactions on Software Engineering, 2025.</p>
+  </div>
+  <div class="pub">
+    <div class="badge">ICSE'24</div>
+    <p>Yuxia Zhang, <b>Mian Qin</b> (student first author), Klaas-Jan Stol, Minghui Zhou, H. Liu.
+      <span class="title">How Are Paid and Volunteer Open Source Developers Different? A Study of the Rust Project.</span>
+      The IEEE/ACM 46th International Conference on Software Engineering, 2024.</p>
+  </div>
+  <div class="pub">
+    <div class="badge">TOSEM'26</div>
+    <p>Yuxia Zhang, Klaas-Jan Stol, Minghui Zhou, Q. Zeng, <b>Mian Qin</b>, H. Liu.
+      <span class="title">Contributions, Collaborations, and Transitions: Paid and Volunteer Developers in the Rust Community.</span>
+      ACM Transactions on Software Engineering and Methodology, 2026.</p>
+  </div>
+
+  <h2 id="education">Education</h2>
+  <div class="item">
+    <div class="row"><b>Aalto University</b><span class="when">2026 – present</span></div>
+    <div class="sub">Ph.D. (Doctoral Researcher)</div>
+  </div>
+  <div class="item">
+    <div class="row"><b>Beijing Institute of Technology</b><span class="when">2023 – 2026</span></div>
+    <div class="sub">M.Eng. in Computer Technology</div>
+  </div>
+  <div class="item">
+    <div class="row"><b>Beijing Institute of Technology</b><span class="when">2019 – 2023</span></div>
+    <div class="sub">B.Eng. in Computer Science and Technology</div>
+  </div>
+
+  <h2 id="other">Work Experience</h2>
+  <div class="item">
+    <div class="row"><b>Alibaba</b> · Backend Development Engineer<span class="when">Jul. 2026 – Sep. 2026</span></div>
+  </div>
+  <div class="item">
+    <div class="row"><b>Alibaba</b> · Backend Development Engineer Intern<span class="when">Jun. 2025 – Sep. 2025</span></div>
+    <!-- <ul>
+      <li>Developed and optimized subsidy recall and coupon exposure engines for large-scale, high-concurrency e-commerce services using a Serverless framework.</li>
+      <li>Contributed to a 0.8% increase in a core conversion metric after full production deployment.</li>
+    </ul> -->
+  </div>
+
+  <footer>© 2026 Mian Qin · Last updated November 2026</footer>
+</div>
+</body>
+</html>
